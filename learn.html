@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" th:href="@{/learn.css}">
+<title>Course Project</title>
+</head>
+<body>
+
+<div class="nav">
+<a class="learn" th:href="learn">LearnHub</a>
+<a class="form" th:href="form">Admin<br></a>
+</div>
+
+<form method="get" >
+<div class="topic">
+<h1 class="heading">Learn from the best,be your best..</h1>
+<p class="dd">Give yourself an upgrade with our inspiring online courses and join a global community of learners</p>
+<button class="start"><h3>Get Started</h3></button>
+</div>
+
+<h1 class="placement">Our Placement Partners</h1>
+<div class="img">
+<img class="img1" alt="image" th:src="@{/assets/img/airbnb.png}">
+<img class="img1" alt="image" th:src="@{/assets/img/coty.png}">
+<img class="img1" alt="image" th:src="@{/assets/logo/Lifegroups.png}">
+<img class="img1" alt="image" th:src="@{/assets/logo/myob.png}"><br>
+<img class="img1" alt="image" th:src="@{/assets/img/tailus.png}">
+<img class="img1" alt="image" th:src="@{/assets/img/microsoft.png}">
+<img class="img1" alt="image" th:src="@{/assets/logo/client-8.png}">
+<img class="img1" alt="image" th:src="@{/assets/img/lilly.png}">
+<button class="comp">And More Companies</button><br>
+
+</div>
+
+<p id="os"> OPEN SOURCE THEME AND UI COMPONENTS</p>
+<h1 class="sub">Geaux Astro helps you <br>craft beautiful websites <br>efficiently</h1>
+
+<div class="dashboard">
+<div class="ui">
+<dl>
+
+<dt class="names_certi"><img class="ui_img" alt="img" th:src="@{/assets/logo/medal.svg}">Certificate Distribution</dt>
+<dd class="dd">We offer certificates to validate and recognize your achievement.</dd>
+
+<dt class="names_certi" ><img class="ui_img" alt="img" th:src="@{/assets/logo/thought.png}">Knowledge</dt>
+<dd class="dd">We deliver transformative knowledge that empowers and inspires.</dd>
+
+<dt class="names_certi" ><img class="ui_img" alt="img" th:src="@{/assets/logo/training.png}">Hands-on Experience</dt>
+<dd class="dd">We provide hands-on experience for real-world learning. You learn best by doing.</dd>
+
+</dl>
+
+</div>
+<div class="board">
+<img class="dimg" style="width:600px;
+	height:450px;margin-left:40px;margin-bottom:10%;padding-top:30px;padding-left:120px;"
+	th:src="@{/assets/img/AboutDashboard.png}">
+</div>
+</div>
+<div class="total">
+<div class=info>
+
+<p class="para1">Empower your future with cutting-edge skills</p>
+<p class="para2">New, Embrace innovation, master technology, & shape the digital world</p>
+<p class="para3">Your journey to success starts here.</p>
+
+</div>
+<div class="totalstudents">
+<p class="para4">Join our course with a proven track record of success, where learning isn't just about gaining skills; it's about growing them. Join us, learn with confidence, and watch your skills soar.
+</p>
+<div class="logic">
+<h2 class="ts">Total Students</h2><br>
+<span class="sts" th:text="${se}">
+</span>
+<h2 class="ts">Placed Students</h2><br>
+<span class="sts" th:text="${placed}">
+</span>
+<h2 class="ts">UnPlaced Students</h2><br>
+<span class="sts" th:text="${unplaced}">
+</span>
+
+</div>
+</div>
+</div>
+
+
+<div class="footer">
+<h1>LearnHub</h1>
+</div>
+<div class="msg">
+<footer> &nbsp; <p> 2022 Tailwind Labs Inc. All rights reserved.</p></footer>
+<a style="text-decoration:none; color:white;" th:href="form">Form</a> | <a style="text-decoration:none; color:white;" th:href="home">Notes</a>
+</div>
+
+</form>
+</body>
+</html>

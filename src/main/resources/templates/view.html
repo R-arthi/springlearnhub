@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Form Page</title>
+<link rel="stylesheet" th:href="@{/Design.css}">
+</head>
+<body>
+
+<div class="nav">
+  <a class="learn" th:href="learn">LearnHub</a>
+  <a class="form" th:href="form">Admin<br></a>
+</div>
+
+<form th:action="@{/weboin/save}" method="POST">
+  <div class="footer"><h1>Fill This Form</h1><br><br></div>
+  <div class="input">
+    <label>Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter Your Name">
+    <label>Role:</label>
+    <input type="text" id="role" name="role" placeholder="Enter Your Role"><br><br>
+    <label>Email:</label>
+    <input type="text" id="email" name="email" placeholder="Enter Your Email">
+    <label>Phone Number:</label>
+    <input type="Number" id="phno" name="phno" placeholder="Enter Your Phone Number"><br><br>
+    <label>Course:</label>
+    <select id="course" name="course">
+      <option>select a course</option>
+      <option>React Basics</option>
+      <option>UI/UX Design</option>
+      <option>JavaScript Fundamentals</option>
+      <option>Advanced CSS</option>
+      <option>Backend Development</option>
+    </select>
+    <label>Status:</label>
+    <select id="status" name="status">
+      <option>Unplaced</option>
+      <option>Placed</option>
+    </select><br><br><br>
+    <button class="submit" type="submit">Submit</button><br><br>
+  </div>
+  <br><br><br>
+</form>
+
+<form method="GET" class="view">
+  
+    <div th:each="s : ${se}" class="cards2" >
+    <h2 th:text="${s.name}">Student Name</h2>
+      <p><strong>ID:</strong> <span th:text="${s.id}">123</span></p>
+      <p><strong>Email:</strong> <span th:text="${s.email}">email@example.com</span></p>
+      <p><strong>Phone:</strong> <span th:text="${s.phno}">1234567890</span></p>
+      <p><strong>Role:</strong> <span th:text="${s.role}">Student</span></p>
+      <p><strong>Course:</strong> <span th:text="${s.course}">Course Name</span></p>
+      <p><strong>Status:</strong> <span th:text="${s.status}">Unplaced</span></p>
+	<a class="delete" th:href="@{/weboin/del(id=${s.id})}">DELETE</a> 
+</div>
+      </form>
+
+<div class="footer">
+  <h1>LearnHub</h1>
+</div>
+
+<div class="msg">
+  <footer> &nbsp; <p> 2022 Tailwind Labs Inc. All rights reserved.</p></footer>
+  <a style="text-decoration:none; color:white;" th:href="form">Form</a> | <a style="text-decoration:none; color:white;" th:href="home">Notes</a>
+</div>
+
+</body>
+</html>

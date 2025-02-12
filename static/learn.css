@@ -1,0 +1,219 @@
+body{
+	background-color: black;
+}
+.footer{
+	text-align:center;
+	font-weight: bold;
+	font-size: large;
+	color:#80ff00;
+}
+.msg{
+	color:white;
+	text-align:center;
+	text-decoration: none;
+}
+
+.learn{
+	color:#80ff00;
+	text-decoration:none;
+	font-weight: 800;
+	padding: 20px 20px;
+	margin-bottom:25px;
+	font-family:sans-serif;
+	font-size:larger;
+}
+.heading{
+	color:white;
+	text-align:center;
+	text-decoration:none;
+	font-weight: 900;
+	padding: 1px;
+	margin-bottom:25px;
+	font-family:sans-serif;
+	font-size:xx-large;
+}
+.placement{
+	color:white;
+	text-align:center;
+	text-decoration:none;
+	font-weight: 900;
+	padding: 1px;
+	margin-top:10%;
+	margin-bottom:25px;
+	font-family:sans-serif;
+	font-size:xx-large;
+}
+.form{
+	color:white;
+	text-decoration:none;
+	padding-left:80%;
+	font-size: medium;
+}
+.topic{
+	height:370px;
+	width:100%;
+	text-align:center;
+	padding-top:15%;
+	background-color:black;
+	background-image:url("/assets/img/Background Hero.svg");
+	color:white;	
+}
+.nav{
+	height:10px;
+	width:75%;
+	background-color:black;
+	border-style:solid;
+	border-radius:45px;
+	border-color:#ffffff;
+	padding:20px;
+	margin: 5px 88px;
+	position:sticky;
+	top:0;
+}
+.start{
+	color:black;
+	background-color:rgb(241, 224, 14);
+	height:50px;
+	width:135px;
+	margin:40px;
+	
+	border-radius: 20px;
+	border-style:solid;
+}
+.comp{
+	color:black;
+	background-color:yellow;
+	height:45px;
+	width:130px;
+	margin-left:40%;
+	border-color:white;
+	border-radius: 20px;
+	border-style:solid;
+}
+
+.dashboard{
+	display:flex;
+	flex-wrap: wrap;
+}
+.ui{
+	
+	padding-left:40px;
+	color:white;
+	width:30%;
+	margin:30px;
+	height:450px;
+	font-weight: bold;
+	line-height: 1.9;
+}
+#os{
+	color:lightblue;
+	text-align:center;
+	font-size:small;
+	font-family:inherit;
+}
+.sub{
+	color:white;
+	text-align:center;
+	font-family:sans-serif;
+	font-size:xx-large;
+	font-weight:900;
+	line-height: 1.8;
+}
+.names_certi{
+	color:white;
+	font-family:sans-serif;
+	font-size:large;
+	font-weight:900;
+	line-height: 1.8;
+}
+.dd{
+	color:grey;
+}
+.ui_img{
+	height:30px;
+	width:30px;
+	margin-left:20px;
+	margin-right:20px;
+}
+.img1{
+	width:200px;
+	margin:30px;
+	height:75px;
+}
+.img{
+	width:90%;
+	margin-left:10%;
+	height:450px;
+}
+.info{
+	margin:30px;
+	width:36%;
+	height:50%;
+}
+.para1{
+	color:green;
+	font-family:sans-serif;
+	font-size:xx-large;
+	font-weight:900;
+	line-height: 1.8;
+}
+.para2{
+	color:blue;
+	font-family:sans-serif;
+	font-size:xx-large;
+	font-weight:900;
+	line-height: 1.8;
+}
+
+.para3{
+	color:red;
+	font-family:sans-serif;
+	font-size:xx-large;
+	font-weight:900;
+	line-height: 1.8;
+}
+.para4{
+	color:white;
+	font-size: large;
+	font-family:sans-serif;
+}
+.totalstudents{
+	width:600px;
+	height:60%;
+	margin-left:25px;
+	margin-top:90px;
+}
+
+.total{
+	display:flex;
+	flex-wrap: wrap;
+}
+.ts{
+	color:black;
+	border:thin;
+	border-radius:10px;
+	height:45px;
+	margin:20px;
+	background-color:#80ff00;
+	padding-left:15px;
+	line-height: 1.8;
+}
+.sts{
+	color:yellow;
+	width:0px;
+	height:60%;
+	padding-right:70%;
+	padding-left:90px;
+	text-align: center;
+	font-size: xx-large;
+	font-family:inherit;
+	line-height:1.8;
+}
+.logic{
+	display:flex;
+	flex-wrap:wrap;
+	margin:20px;
+	font-weight:700;
+	flex-wrap:wrap;
+	color:white;
+}
